@@ -1,0 +1,39 @@
+:root {
+    --primary-color : dodgerblue;
+    --font-color: white;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #dacaf2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%237a3adf' fill-opacity='0.97' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.player{
+    max-width: 80vw;
+    min-width: 800px;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+ video{
+     border-radius: 5px;
+     width: 100%;
+     height: auto;
+ }
+
+
+ @media screen and (max-width:600px){
+     .player{
+         min-width: 0;
+         max-width: 95vw ;
+     }
+ }
